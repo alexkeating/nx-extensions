@@ -39,7 +39,10 @@ function copyOrCreatePackageJson(pathCollection: PathCollection) {
     packageJson['files'] = packageJson.files
       ? [...new Set([...packageJson.files, ...libPackageJson.files])]
       : libPackageJson.files;
-    writeJsonFile(pathCollection.pkgJson, packageJson);
+    writeJsonFile(
+      joinPathFragments(pathCollection.distDir, 'package.json'),
+      packageJson
+    );
   } else {
     writeJsonFile(
       joinPathFragments(pathCollection.distDir, 'package.json'),

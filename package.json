@@ -80,7 +80,7 @@
     "@nrwl/nx-plugin": "13.8.3",
     "@nrwl/react": "13.8.3",
     "@nrwl/storybook": "13.8.3",
-    "@nrwl/web": "13.8.3",
+    "@nrwl/web": "15.8.1",
     "@nrwl/workspace": "13.8.3",
     "@nx-plus/docusaurus": "12.2.0",
     "@nx-plus/vue": "12.2.0",
